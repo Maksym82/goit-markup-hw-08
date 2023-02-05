@@ -1,0 +1,41 @@
+.body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--white-color);
+  color: var(--second-text-color);
+  letter-spacing: 0.03em;
+  font-family: 'Roboto', -apple-system,
+  BlinkMacSystemFont,
+  avenir next,
+  avenir,
+  segoe ui,
+  helvetica neue,
+  helvetica,
+  Cantarell,
+  Ubuntu,
+  roboto,
+  noto,
+  arial,
+  sans-serif;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+  
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

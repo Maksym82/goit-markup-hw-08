@@ -1,0 +1,97 @@
+.portfolio__list {
+    @extend %list;
+}
+
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 30px;
+}
+
+.portfolio__link {
+    text-decoration: none;
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+
+
+.portfolio__list .portfolio__item {
+    width: calc((100% - 60px) / 3)
+}
+
+.portfolio__list img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*      Оверлей картки портфоліо   */
+
+
+.portfolio__wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__text {
+    position: absolute;
+    transform: translateY(100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    background-color: rgba(33, 150, 243, 0.9);
+    color:var(--white-color)
+}
+
+.portfolio__link:hover .portfolio__text {
+    transform: translateY(0);
+}
+
+.portfolio__card-content {
+    background-color: var(--white-color);
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.portfolio__list .portfolio__title {
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+}
+
+.portfolio__paragraph {
+    color: var(--second-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    text-decoration: none;
+    margin: 0;
+}
