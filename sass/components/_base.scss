@@ -18,6 +18,10 @@
   arial,
   sans-serif;
 
+  &.modal-open {
+    overflow: hidden;
+}
+
   @media screen and (max-width: 767px) {
     padding-top: 60px;
   }
@@ -36,6 +40,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul {
   margin: 0;
+  padding: 0;
 }
