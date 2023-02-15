@@ -9,7 +9,8 @@
     opacity: 1;
     background-color: var(--backdrop-background-color);
     transition: opacity 250ms linear, visibility 250ms linear, transform 250ms linear;
-
+    overflow-y: scroll;
+ 
     &--hidden {
         opacity: 0;
         pointer-events: none;
@@ -83,6 +84,7 @@
 
     &__title {
         display: block;
+        color:var(--primary-text-color);
         text-align: center;
         font-weight: 700;
         font-size: 20px;
@@ -250,7 +252,7 @@
         }
 
         .checkbox__input:checked ~ & {
-            fill: var(--accent-color);
+            fill: #2196F3;;
             border: transparent;
         }
     }
