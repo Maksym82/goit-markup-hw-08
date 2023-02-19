@@ -5,17 +5,20 @@
 }
 @media screen and (min-width: 480px) {
   .team__list, .servises__list, .projects, .filter, .page-footer__container, .header__container, .clients__list, .features__list {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .team__list, .servises__list, .projects, .filter, .page-footer__container, .header__container, .clients__list, .features__list {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__list, .servises__list, .projects, .filter, .page-footer__container, .header__container, .clients__list, .features__list {
-    width: 1200px;
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -835,8 +838,9 @@ ul {
   }
 }
 .checkbox__input:checked ~ .checkbox__icon {
-  fill: #2196F3;
-  border: transparent;
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .checkbox__link {
   color: var(--accent-color);
