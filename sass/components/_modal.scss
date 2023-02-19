@@ -252,13 +252,14 @@
         }
 
         .checkbox__input:checked ~ & {
-            fill: #2196F3;;
-            border: transparent;
+            fill: var(--white-color);
+            background-color:var(--accent-color);
+            border-color: var(--accent-color);
         }
     }
 
     &__link {
-        // position: relative;
+    
         color: var(--accent-color);
         text-decoration-skip-ink: none;
     }
