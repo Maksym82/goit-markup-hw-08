@@ -1,0 +1,13 @@
+#scrollToTop {
+  position: fixed;
+  bottom: 36px;
+  left: 75%;
+  display: none;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 15;
+}
+
+.scroll-up {
+  fill: var(--button-active-blue);
+}
