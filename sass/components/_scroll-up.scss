@@ -1,13 +1,25 @@
 #scrollToTop {
   position: fixed;
-  bottom: 35px;
+  bottom: 2px;
   left: 75%;
   display: none;
   cursor: pointer;
   opacity: 0.6;
   z-index: 15;
+
+  @media (min-width: 1200px) {
+    left: 85%;
+  }
 }
 
 .scroll-up {
   fill: #188ce8;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  border: 2px solid white;
+}
+
+.scroll-up:hover {
+  fill: white;
+  stroke: black;
 }
