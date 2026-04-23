@@ -134,6 +134,39 @@
     <main>
       <!-- Hero -->
       <section class="hero">
+        <picture>
+          <source
+            srcset="./images/hero/hero.webp 1x, ./images/hero/hero@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero/hero-tablet.webp    1x,
+              ./images/hero/hero-tablet@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/hero/hero-mobile.webp    1x,
+              ./images/hero/hero-mobile@2x.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="hero__image"
+            srcset="
+              ./images/hero/hero-mobile.webp    1x,
+              ./images/hero/hero-mobile@2x.webp 2x
+            "
+            src="./images/hero/hero-mobile.jpg"
+            alt="Співробітники веб-студії"
+            fetchpriority="high"
+          />
+        </picture>
         <h1 class="hero__title">
           Ефективні рішення для <br />
           вашого бізнесу
