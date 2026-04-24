@@ -5,62 +5,28 @@
   min-height: 400px;
   padding: 139px 30px;
   background-color: var(--background-gray-color);
-  // background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-  // url('../images/hero/hero-mobile.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   text-align: center;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    & {
-      // background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-      // url('../images/hero/hero-mobile@2x.webp');
-    }
-  }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding: 118px 60px;
-    // background-image: linear-gradient(to right,
-    //             rgba(47, 48, 58, 0.4),
-    //             rgba(47, 48, 58, 0.4)),
-    //         url('../images/hero/hero-tablet.webp');
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      // & {
-      //     background-image: linear-gradient(to right,
-      //             rgba(47, 48, 58, 0.4),
-      //             rgba(47, 48, 58, 0.4)),
-      //                 url('../images/hero/hero-tablet@2x.webp');
-      // }
-    }
   }
 
   @media screen and (min-width: 961px) {
     max-width: 1600px;
     min-height: 600px;
     padding: 200px 0;
-    // background-image: linear-gradient(to right,
-    //         rgba(47, 48, 58, 0.4),
-    //         rgba(47, 48, 58, 0.4)),
-    //     url('../images/hero/hero.webp');
-    background-size: cover;
+  }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      // & {
-      //     background-image: linear-gradient(to right,
-      //             rgba(47, 48, 58, 0.4),
-      //             rgba(47, 48, 58, 0.4)),
-      //         url('../images/hero/hero@2x.webp');
-      // }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 484px;
+    object-fit: cover;
+
+    @media (min-width: 768px) {
+      min-height: 600px;
     }
   }
 
@@ -104,17 +70,5 @@
     &:focus {
       background-color: var(--button-active-blue);
     }
-  }
-}
-
-.hero__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 442px;
-  object-fit: cover;
-
-  @media (min-width: 768px) {
-    min-height: 600px;
   }
 }

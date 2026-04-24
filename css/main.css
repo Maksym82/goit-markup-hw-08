@@ -487,16 +487,12 @@ ul {
   min-height: 400px;
   padding: 139px 30px;
   background-color: var(--background-gray-color);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
     padding: 118px 60px;
-    background-size: cover;
   }
 }
 @media screen and (min-width: 961px) {
@@ -504,7 +500,19 @@ ul {
     max-width: 1600px;
     min-height: 600px;
     padding: 200px 0;
-    background-size: cover;
+  }
+}
+.hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 484px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .hero__image {
+    min-height: 600px;
   }
 }
 .hero__title {
@@ -549,20 +557,6 @@ ul {
 }
 .hero__button:hover, .hero__button:focus {
   background-color: var(--button-active-blue);
-}
-
-.hero__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 442px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (min-width: 768px) {
-  .hero__image {
-    min-height: 600px;
-  }
 }
 
 .icons {
